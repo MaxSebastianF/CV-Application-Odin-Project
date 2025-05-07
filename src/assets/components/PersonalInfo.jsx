@@ -10,11 +10,11 @@ export function PersonalInfo({ editMode, info, onChange }) {
         {editMode ? (
           <div className="form-group">
             <label htmlFor="name">Name</label>
-            <input name="name" value={info.name} onChange={handleChange} />
+            <input id="name" name="name" value={info.name} onChange={handleChange} autoComplete="name"/>
             <label htmlFor="email">Email</label>
-            <input name="email" value={info.email} onChange={handleChange} />
+            <input id="email" name="email" value={info.email} onChange={handleChange} autoComplete="email"/>
             <label htmlFor="phone">Phone</label>
-            <input name="phone" value={info.phone} onChange={handleChange} />
+            <input id="phone" name="phone" value={info.phone} onChange={handleChange} autoComplete="phone"/>
           </div>
         ) : (
           <div className="form-group info">
