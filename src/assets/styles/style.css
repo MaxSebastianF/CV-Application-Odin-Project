@@ -1,0 +1,23 @@
+form {
+    text-align: center;
+    margin: 20px auto;
+    max-width: 600px;
+  }
+  section {
+    margin-bottom: 30px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+  }
+  input {
+    display: block;
+    margin: 5px auto 15px;
+    padding: 8px;
+    width: 80%;
+  }
+  button {
+    margin: 5px;
+    padding: 8px 15px;
+    cursor: pointer;
+  }
+  
