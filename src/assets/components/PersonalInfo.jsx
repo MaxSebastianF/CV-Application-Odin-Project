@@ -8,20 +8,20 @@ export function PersonalInfo({ editMode, info, onChange }) {
       <section>
         <h2>Personal Info</h2>
         {editMode ? (
-          <>
-            <label>Name</label>
+          <div className="form-group">
+            <label htmlFor="name">Name</label>
             <input name="name" value={info.name} onChange={handleChange} />
-            <label>Email</label>
+            <label htmlFor="email">Email</label>
             <input name="email" value={info.email} onChange={handleChange} />
-            <label>Phone</label>
+            <label htmlFor="phone">Phone</label>
             <input name="phone" value={info.phone} onChange={handleChange} />
-          </>
+          </div>
         ) : (
-          <>
+          <div className="form-group info">
             <p><strong>Name:</strong> {info.name}</p>
             <p><strong>Email:</strong> {info.email}</p>
             <p><strong>Phone:</strong> {info.phone}</p>
-          </>
+          </div>
         )}
       </section>
     );

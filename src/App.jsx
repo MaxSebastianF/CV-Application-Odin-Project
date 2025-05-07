@@ -32,8 +32,9 @@ export default function App() {
 
   return (
     <>
-      <h1>Formulario de CV</h1>
+      
       <form className="form">
+      <h1>Applicaction Form</h1>
         <PersonalInfo
           editMode={editMode}
           info={personalInfo}

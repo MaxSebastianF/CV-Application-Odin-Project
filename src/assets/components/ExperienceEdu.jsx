@@ -9,16 +9,16 @@ export function ExperienceEdu({ editMode, info, onChange }) {
       <section>
         <h2>Educational Experience</h2>
         {editMode ? (
-          <>
-            <span htmlFor="">School</span>
+          <div className="form-group">
+            <label htmlFor="">School</label>
             <input name="school" value={info.school} onChange={handleChange}/>
-            <span htmlFor="">Titulo</span>
+            <label htmlFor="">Title</label>
             <input name="title" value= {info.title} onChange={handleChange}/>
-            <span htmlFor="">Fecha</span>
+            <label htmlFor="">Date</label>
             <input  name="date" type="date" date = {info.date} onChange={handleChange}/>
-          </>
+          </div>
         ) : (
-          <>
+          <div className="form-group info">
             {" "}
             <p>School: 
               <strong>{info.school}</strong>
@@ -29,7 +29,7 @@ export function ExperienceEdu({ editMode, info, onChange }) {
             <p>Date: 
               <strong>{info.date}</strong>
             </p>
-          </>
+          </div>
         )}
       </section>
     </>
